@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Minister from './Minister';
+import { useMediaQuery } from 'react-responsive';
 
 const Component = styled.div`
     width: 100%;
@@ -46,9 +47,11 @@ const FindYourMPTitle = styled.a`
 `;
 
 function WantToDoSomething() {
+    const isPhone = useMediaQuery({ minDeviceWidth: 600 });
+
     return (
         <Component>
-            <Title>Call Your<br/>Elected Official!</Title>
+            <Title>Call Your{!isPhone ? <br/> : " "}Elected Official!</Title>
             <FindYourMPTitle href = {"https://www.ourcommons.ca/members/en"}>Find You MP</FindYourMPTitle>
             <Content>
                 <Minister name = {"Jonathan Wilkinson"} title = {"Minister of Environment and Climate Change"} email = {"Jonathan.Wilkinson@parl.gc.ca"} phone = {"613-995-1225"} img = {"https://pm.gc.ca/sites/pm/files/media/minister/no-date/wilkinson_200x200_1.jpg"} />
