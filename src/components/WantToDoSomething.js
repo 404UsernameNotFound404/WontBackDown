@@ -8,6 +8,9 @@ const Component = styled.div`
     border-radius: 2em;
     border: black thick solid;
     border-radius: 2em;
+    @media (max-width: 800px) {
+        margin-top: 4em;
+    }
 `;
 
 const Title = styled.h1`
@@ -15,6 +18,9 @@ const Title = styled.h1`
     font-size: 3em;
     margin: 0.25em;
     color: #d90e0e;
+    @media (max-width: 800px) {
+        font-size: 2.5em;
+    }
 `;
 
 const Content = styled.div`
@@ -22,7 +28,7 @@ const Content = styled.div`
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         display: block;
     }
 `;
@@ -42,7 +48,7 @@ const FindYourMPTitle = styled.a`
 function WantToDoSomething() {
     return (
         <Component>
-            <Title>Call Your Elected Official!</Title>
+            <Title>Call Your<br/>Elected Official!</Title>
             <FindYourMPTitle href = {"https://www.ourcommons.ca/members/en"}>Find You MP</FindYourMPTitle>
             <Content>
                 <Minister name = {"Jonathan Wilkinson"} title = {"Minister of Environment and Climate Change"} email = {"Jonathan.Wilkinson@parl.gc.ca"} phone = {"613-995-1225"} img = {"https://pm.gc.ca/sites/pm/files/media/minister/no-date/wilkinson_200x200_1.jpg"} />

@@ -3,11 +3,12 @@ import styled from 'styled-components';
 
 const Component = styled.div`
     width: 40%;
-    @media (max-width: 600px) { 
+    @media (max-width: 800px) { 
         width: 90%;
         margin: auto;
         margin-bottom: 1em;
     }
+    margin-bottom: 1em;
 `;
 
 const Image = styled.img`

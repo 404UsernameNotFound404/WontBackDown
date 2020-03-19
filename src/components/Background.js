@@ -23,7 +23,7 @@ const WhiteFilter = styled.div`
   width: 100%;
   height: 100%;
   position:  relative;
-  background-color: rgba(255,255,255, 0.75);
+  background-color: rgba(255,255,255, 0.85);
 `;
 
 function BackgroundComp() {

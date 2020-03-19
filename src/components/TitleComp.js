@@ -16,7 +16,7 @@ const Title = styled.h1`
     text-align: center;
     margin: auto;
     font-size: 6em;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         font-size: 5em;
     }
 `;
@@ -26,6 +26,10 @@ const Image = styled.img`
     max-width: 95%;
     display: block;
     margin: auto;
+    @media (max-width: 800px) {
+        width: 95%;
+        height: auto;
+    }
 `;
 
 const ImageContainer = styled.div`

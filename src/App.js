@@ -8,7 +8,7 @@ const Page = styled.div`
   width: 60em;
   margin: auto;
   font-family: 'Scope One', serif;
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     width: 90%;
   }
 `;
