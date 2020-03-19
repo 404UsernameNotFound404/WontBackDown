@@ -38,7 +38,7 @@ const ImageContainer = styled.div`
     justify-content: center;
     top: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     z-index: -5;
 `;
 
