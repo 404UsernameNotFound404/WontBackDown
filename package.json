@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.0",
+    "react-alice-carousel": "^1.17.3",
     "react-dom": "^16.13.0",
     "react-responsive": "^8.0.3",
     "react-scripts": "3.4.0",
@@ -17,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "react-scripts build && aws2 s3 sync build/ s3://we-wont-back-down.ca --acl public-read"
+    "deploy": "aws2 s3 sync build/ s3://we-wont-back-down.ca --acl public-read"
   },
   "eslintConfig": {
     "extends": "react-app"
